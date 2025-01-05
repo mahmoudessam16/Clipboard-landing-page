@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: rgb(76, 84, 93);
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 25px;
+  color: rgb(76, 84, 93);
+  margin-bottom: 10px;
+}
+
+p {
+  color: rgb(159, 171, 178);
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btns {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btns button {
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-family: "Bai Jamjuree", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btns button:hover {
+  opacity: 0.7;
+}
+.btns button:last-child {
+  background-color: rgb(97, 115, 255);
+  box-shadow: 0px 3px 0px 0px rgb(35, 55, 202), 0px 15px 20px 0px rgb(195, 196, 204);
+}
+.btns button:first-child {
+  background-color: rgb(38, 186, 164);
+  box-shadow: 0px 3px 0px 0px rgb(29, 140, 124), 0px 15px 20px 0px rgb(204, 239, 233);
+}
+
+body {
+  font-family: "Bai Jamjuree", serif;
+}
+body header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 100%;
+  height: 95vh;
+  padding: 100px 0;
+  text-align: center;
+}
+body header article img {
+  width: 110px;
+}
+body header article h1 {
+  color: rgb(76, 84, 93);
+  font-size: 40px;
+  font-weight: 600;
+  margin: 40px 0 15px 0;
+}
+body header article p {
+  color: rgb(159, 171, 178);
+  font-size: 18px;
+  font-weight: 500;
+  width: 62%;
+  margin: auto;
+  line-height: 1.6;
+}
+body main section:first-child {
+  text-align: center;
+  padding: 70px 0 60px 0;
+}
+body main section:first-child p {
+  width: 65%;
+  margin: 20px auto 0px;
+}
+body main section:nth-child(2) {
+  display: flex;
+}
+body main section:nth-child(2) > article {
+  flex: 1;
+}
+body main section:nth-child(2) > article img {
+  max-width: 100%;
+  transform: translateX(-40px);
+}
+body main section:nth-child(2) aside {
+  flex: 1;
+  padding-left: 40px;
+}
+body main section:nth-child(2) aside article {
+  margin: 50px 0;
+}
+body main section:nth-child(2) aside article h3 {
+  font-size: 25px;
+  color: rgb(76, 84, 93);
+  margin-bottom: 10px;
+}
+body main section:nth-child(2) aside article p {
+  width: 350px;
+  color: rgb(159, 171, 178);
+  font-size: 16px;
+  line-height: 1.6;
+}
+body main section:nth-child(3) {
+  text-align: center;
+  padding: 100px 0;
+}
+body main section:nth-child(3) p {
+  width: 70%;
+  margin: 20px auto 0;
+}
+body main > img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+body main section:nth-child(5) {
+  text-align: center;
+  padding: 70px 0;
+}
+body main section:nth-child(5) p {
+  margin-top: 15px;
+}
+body main section:nth-child(6) {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 90px 0;
+  text-align: center;
+  gap: 15px;
+}
+body main section:nth-child(6) article {
+  width: 33.3333333333%;
+}
+body main section:nth-child(6) article img {
+  width: 45px;
+  margin-bottom: 30px;
+}
+body main section:nth-child(6) article p {
+  margin-top: 10px;
+}
+body main section:nth-child(7) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 70px 0;
+}
+body main section:nth-child(7) img {
+  max-width: 100%;
+  margin: auto;
+}
+body main section:nth-child(8) {
+  padding: 100px 0;
+  text-align: center;
+}
+body main section:nth-child(8) h2 {
+  margin-bottom: 20px;
+}
+body main section:nth-child(8) p {
+  width: 70%;
+  margin: 0px auto 60px;
+}
+body footer {
+  background-color: #f6f6f6;
+  padding: 40px 0;
+}
+body footer article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body footer article div:first-child {
+  flex: 0.5;
+}
+body footer article div:first-child img {
+  width: 45px;
+}
+body footer article div.links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+body footer article div.links div a {
+  display: block;
+  text-decoration: none;
+  color: rgb(76, 84, 93);
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 400;
+}
+body footer article div.links div a:hover {
+  color: rgb(38, 186, 164);
+}
+body footer article div.links div a:first-child {
+  margin-bottom: 20px;
+}
+body footer article .social {
+  flex: 1;
+  text-align: center;
+}
+body footer article .social svg:not(:nth-child(3)) {
+  margin-right: 20px;
+}
+body footer article .social svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+body footer article .social svg path {
+  transition: 0.3s;
+}
+body footer article .social svg:hover {
+  transform: scale(1.1);
+}
+body footer article .social svg:hover path {
+  fill: rgb(38, 186, 164);
+}
+
+@media (min-width: 1400px) {
+  body header {
+    height: 65vh;
+    padding: 100px 0 50px 0;
+  }
+}
+@media (max-width: 1000px) {
+  body main section:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body main section:nth-child(2) > article {
+    width: 90%;
+  }
+  body main section:nth-child(2) > article img {
+    transform: translateX(0);
+  }
+  body main section:nth-child(2) aside {
+    padding: 0;
+  }
+  body main section:nth-child(2) aside article p {
+    width: 320px;
+  }
+  body main section:nth-child(6) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body main section:nth-child(6) article {
+    width: 50%;
+  }
+}
+@media (max-width: 765px) {
+  body header article h1 {
+    font-size: 32px;
+  }
+  body header article p {
+    width: 80%;
+    font-size: 15px;
+  }
+  body main section:first-child h2 {
+    font-size: 26px;
+  }
+  body main section:first-child p {
+    width: 80%;
+  }
+  body main section:nth-child(3) {
+    padding: 60px 0;
+  }
+  body main section:nth-child(3) h2 {
+    font-size: 26px;
+  }
+  body main section:nth-child(3) p {
+    width: 100%;
+  }
+  body main section:nth-child(5) {
+    padding: 70px 0;
+  }
+  body main section:nth-child(5) h2 {
+    font-size: 26px;
+  }
+  body main section:nth-child(6) {
+    gap: 30px;
+  }
+  body main section:nth-child(6) article {
+    width: 100%;
+  }
+  body main section:nth-child(8) p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body footer article {
+    flex-direction: column;
+  }
+  body footer article > div:first-child {
+    margin-bottom: 40px;
+  }
+  body footer article > div:first-child img {
+    width: 60px;
+  }
+  body footer article div.links {
+    flex-direction: column;
+    text-align: center;
+  }
+  body footer article div.links div a {
+    margin-bottom: 20px;
+  }
+  body footer article .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    width: 80%;
+  }
+  .btns button {
+    font-size: 13px;
+    padding: 14px 20px;
+  }
+}
+@media (max-width: 450px) {
+  body header {
+    background-image: url(../images/bg-header-mobile.png);
+  }
+  body header article h1 {
+    font-size: 28px;
+  }
+  body header article p {
+    width: 100%;
+    font-size: 14px;
+  }
+  body main section:first-child {
+    margin-top: 85px;
+  }
+  body main section:first-child h2 {
+    font-size: 22px;
+  }
+  body main section:first-child p {
+    font-size: 14px;
+    width: 100%;
+  }
+  body main section:nth-child(2) aside article p {
+    width: 280px;
+  }
+  body main section:nth-child(7) img {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  h3 {
+    font-size: 22px !important;
+  }
+  .btns {
+    flex-direction: column;
+  }
+  .btns button {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+  h2 {
+    font-size: 26px !important;
+  }
+}
+@media (max-width: 350px) {
+  body main section:first-child {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
